@@ -1,0 +1,18 @@
+$primary: #c29938;
+$light: #fbf5ef;
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+$custom-colors: (
+  "custom-color": #900,
+  "altlight": #f2ebfa,
+  "altdark": #522192,
+); 
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
